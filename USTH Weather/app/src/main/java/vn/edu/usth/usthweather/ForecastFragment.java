@@ -23,23 +23,23 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        LinearLayout linearLayout = new LinearLayout(getContext());
-        linearLayout.setBackgroundColor(Color.parseColor("#00BFFF"));
-        linearLayout.setOrientation(LinearLayout.VERTICAL);
-
-        TextView day = new TextView(getContext());
-        day.setText(R.string.sunday);
-        day.setTextSize(50);
-        day.setTextColor(Color.parseColor("#FFFFFF"));
-        day.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
-
-        ImageView imageView = new ImageView(getContext());
-        imageView.setImageResource(R.drawable.rain);
-        imageView.setPadding(16,16,16,16);
-
-        linearLayout.addView(day);
-        linearLayout.addView(imageView);
-        return linearLayout;
+//        LinearLayout linearLayout = new LinearLayout(getContext());
+//        linearLayout.setBackgroundColor(Color.parseColor("#00BFFF"));
+//        linearLayout.setOrientation(LinearLayout.VERTICAL);
+//
+//        TextView day = new TextView(getContext());
+//        day.setText(R.string.sunday);
+//        day.setTextSize(50);
+//        day.setTextColor(Color.parseColor("#FFFFFF"));
+//        day.setGravity(View.TEXT_ALIGNMENT_GRAVITY);
+//
+//        ImageView imageView = new ImageView(getContext());
+//        imageView.setImageResource(R.drawable.rain);
+//        imageView.setPadding(16,16,16,16);
+//
+//        linearLayout.addView(day);
+//        linearLayout.addView(imageView);
+        return inflater.inflate(R.layout.fragment_forecast,container,false);
 
     }
 }

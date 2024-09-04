@@ -1,14 +1,445 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ForecastFragment">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F3ECFF">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Monday -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:paddingVertical="8dp">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/partly_cloudy" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Partly Cloudy"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="24C - 31C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- Tuesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/shower" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tue"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Showers"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="24C - 30C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/rain" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Rainy"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="22C - 23C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/sun" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Thu"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Mostly Sunny"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="28C - 35C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/partly_cloudy" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Cloudy"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="24C - 31C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/rain" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sat"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Rainy"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="22C - 23C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/shower" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Sun"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Shower"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="24C - 30C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/rain" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Mostly Rainy"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="22C - 23C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/rain" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Tue"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Rainy"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="22C - 23C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/sun" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Sunny"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="28C - 35C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/shower" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Thu"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Shower"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="22C - 23C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <!-- Wednesday -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/rain" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            android:paddingStart="16dp"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Mostly Rain"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="22C - 23C"
+            android:textSize="18sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+</LinearLayout>
