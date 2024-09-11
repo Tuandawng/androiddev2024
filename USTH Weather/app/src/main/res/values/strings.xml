@@ -3,4 +3,22 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="sunday">Sunday</string>
+    <string name="image">Image</string>
+    <string name="mon">Mon</string>
+    <string name="partly_cloudy">Partly Cloudy</string>
+    <string name="_24c_31c">24C - 31C</string>
+    <string name="tue">Tue</string>
+    <string name="showers">Showers</string>
+    <string name="_24c_30c">24C - 30C</string>
+    <string name="wed">Wed</string>
+    <string name="rainy">Rainy</string>
+    <string name="_22c_23c">22C - 23C</string>
+    <string name="mostly_sunny">Mostly Sunny</string>
+    <string name="_28c_35c">28C - 35C</string>
+    <string name="fri">Fri</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="shower">Shower</string>
+    <string name="mostly_rainy">Mostly Rainy</string>
 </resources>

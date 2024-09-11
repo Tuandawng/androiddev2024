@@ -1,5 +1,6 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -11,9 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-            android:paddingVertical="8dp">
+        android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/partly_cloudy" />
@@ -21,26 +23,29 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Mon"
+            android:text="@string/mon"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Partly Cloudy"
+            android:text="@string/partly_cloudy"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="24C - 31C"
+            android:text="@string/_24c_31c"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <!-- Tuesday -->
@@ -51,6 +56,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/shower" />
@@ -58,26 +64,29 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Tue"
+            android:text="@string/tue"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Showers"
+            android:text="@string/showers"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="24C - 30C"
+            android:text="@string/_24c_30c"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <!-- Wednesday -->
@@ -88,6 +97,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/rain" />
@@ -95,26 +105,29 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Wed"
+            android:text="@string/wed"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Rainy"
+            android:text="@string/rainy"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="22C - 23C"
+            android:text="@string/_22c_23c"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
     <!-- Wednesday -->
@@ -125,6 +138,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/sun" />
@@ -135,23 +149,26 @@
             android:text="Thu"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText,RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Mostly Sunny"
+            android:text="@string/mostly_sunny"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="28C - 35C"
+            android:text="@string/_28c_35c"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
     <!-- Wednesday -->
     <LinearLayout
@@ -161,6 +178,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/partly_cloudy" />
@@ -168,18 +186,20 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Fri"
+            android:text="@string/fri"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Cloudy"
+            android:text="@string/cloudy"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -187,7 +207,8 @@
             android:layout_marginStart="16dp"
             android:text="24C - 31C"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
     <!-- Wednesday -->
     <LinearLayout
@@ -197,6 +218,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/rain" />
@@ -204,10 +226,11 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Sat"
+            android:text="@string/sat"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
@@ -215,7 +238,8 @@
             android:text="Rainy"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -233,6 +257,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/shower" />
@@ -240,18 +265,20 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Sun"
+            android:text="@string/sun"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Shower"
+            android:text="@string/shower"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -269,6 +296,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/rain" />
@@ -279,15 +307,17 @@
             android:text="Mon"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Mostly Rainy"
+            android:text="@string/mostly_rainy"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -305,6 +335,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/rain" />
@@ -315,7 +346,8 @@
             android:text="Tue"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
@@ -323,7 +355,8 @@
             android:text="Rainy"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -334,41 +367,6 @@
             android:textColor="#000" />
     </LinearLayout>
     <!-- Wednesday -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingVertical="8dp">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="24dp"
-            android:src="@drawable/sun" />
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Wed"
-            android:paddingStart="16dp"
-            android:textSize="18sp"
-            android:textColor="#000" />
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Sunny"
-            android:textSize="18sp"
-            android:textColor="#000"
-            android:paddingStart="16dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="28C - 35C"
-            android:textSize="18sp"
-            android:textColor="#000" />
-    </LinearLayout>
     <!-- Wednesday -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -377,6 +375,46 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
+            android:layout_width="30dp"
+            android:layout_height="24dp"
+            android:src="@drawable/sun" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="Wed"
+            android:textColor="#000"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:text="Sunny"
+            android:textColor="#000"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="28C - 35C"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+
+        <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/shower" />
@@ -387,7 +425,8 @@
             android:text="Thu"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
@@ -395,7 +434,8 @@
             android:text="Shower"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -403,7 +443,8 @@
             android:layout_marginStart="16dp"
             android:text="22C - 23C"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
     <!-- Wednesday -->
     <LinearLayout
@@ -413,6 +454,7 @@
         android:paddingVertical="8dp">
 
         <ImageView
+            android:contentDescription="@string/image"
             android:layout_width="30dp"
             android:layout_height="24dp"
             android:src="@drawable/rain" />
@@ -423,7 +465,8 @@
             android:text="Fri"
             android:paddingStart="16dp"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="150dp"
@@ -431,7 +474,8 @@
             android:text="Mostly Rain"
             android:textSize="18sp"
             android:textColor="#000"
-            android:paddingStart="16dp"/>
+            android:paddingStart="16dp"
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -439,7 +483,8 @@
             android:layout_marginStart="16dp"
             android:text="22C - 23C"
             android:textSize="18sp"
-            android:textColor="#000" />
+            android:textColor="#000"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 
 </LinearLayout>
