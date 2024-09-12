@@ -1,4 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,14 +10,16 @@
         android:id="@+id/weather_fragment"
         android:name="vn.edu.usth.usthweather.WeatherFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        tools:layout="@layout/fragment_weather"/>
 
     <!-- ForecastFragment below WeatherFragment -->
     <fragment
         android:id="@+id/forecast_fragment"
         android:name="vn.edu.usth.usthweather.ForecastFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        tools:layout="@layout/fragment_forecast" />
 </LinearLayout>
 
 
