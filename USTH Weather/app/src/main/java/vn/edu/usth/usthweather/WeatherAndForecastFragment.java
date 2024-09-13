@@ -25,8 +25,8 @@ public class WeatherAndForecastFragment extends Fragment {
         forecastFragment = new ForecastFragment();
         FragmentManager fragmentManager = getChildFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.weather_fragment,weatherFragment);
-        fragmentTransaction.add(R.id.forecast_fragment,forecastFragment);
+        fragmentTransaction.add(R.id.weatherContainer,weatherFragment);
+        fragmentTransaction.add(R.id.forecastContainer,forecastFragment);
         fragmentTransaction.commit();
         return view;
 
