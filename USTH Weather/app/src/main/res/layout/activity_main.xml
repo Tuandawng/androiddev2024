@@ -1,29 +1,55 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <!-- WeatherFragment (green area) -->
-<!--    <fragment-->
-<!--        android:id="@+id/weather_fragment"-->
-<!--        android:name="vn.edu.usth.usthweather.WeatherFragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        tools:layout="@layout/fragment_weather"/>-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/weather_fragment"-->
+    <!--        android:name="vn.edu.usth.usthweather.WeatherFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        tools:layout="@layout/fragment_weather"/>-->
 
-<!--    &lt;!&ndash; ForecastFragment below WeatherFragment &ndash;&gt;-->
-<!--    <fragment-->
-<!--        android:id="@+id/forecast_fragment"-->
-<!--        android:name="vn.edu.usth.usthweather.ForecastFragment"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        tools:layout="@layout/fragment_forecast" />-->
+    <!--    &lt;!&ndash; ForecastFragment below WeatherFragment &ndash;&gt;-->
+    <!--    <fragment-->
+    <!--        android:id="@+id/forecast_fragment"-->
+    <!--        android:name="vn.edu.usth.usthweather.ForecastFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        tools:layout="@layout/fragment_forecast" />-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:contentDescription="tab layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/weather_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-</LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout1"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="297dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
 
