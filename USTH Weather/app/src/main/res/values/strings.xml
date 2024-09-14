@@ -21,4 +21,8 @@
     <string name="sun">Sun</string>
     <string name="shower">Shower</string>
     <string name="mostly_rainy">Mostly Rainy</string>
+    <string name="_12c_n_sunny">12C \n Sunny</string>
+    <string name="paris">Paris</string>
+    <string name="thu">Thu</string>
+    <string name="sunny">Sunny</string>
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="marginTop110">110dp</dimen>
+    <dimen name="marginTop380">380dp</dimen>
+    <dimen name="width250">250dp</dimen>
+    <dimen name="height250">250dp</dimen>
+    <dimen name="marginTop10">10dp</dimen>
+    <dimen name="marginBottom10">10dp</dimen>
+    <dimen name="marginBottom28">28dp</dimen>
+    <dimen name="paddingVertical8">8dp</dimen>
+    <dimen name="width30">30dp</dimen>
+    <dimen name="height24">24dp</dimen>
+    <dimen name="width100">100dp</dimen>
+    <dimen name="paddingStart16">16dp</dimen>
+    <dimen name="width150">150dp</dimen>
+    <dimen name="marginStart16">16dp</dimen>
+</resources>

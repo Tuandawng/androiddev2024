@@ -5,7 +5,7 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="top|left"
+    android:layout_gravity="top|start"
     android:background="@android:color/holo_green_light"
     tools:context=".WeatherFragment">
 
@@ -15,7 +15,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="12C \n Sunny"
+        android:text="@string/_12c_n_sunny"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -26,10 +26,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="@dimen/width250"
+        android:layout_height="@dimen/height250"
+        android:layout_marginTop="@dimen/marginTop10"
+        android:layout_marginBottom="@dimen/marginBottom10"
         android:foregroundGravity="center"
         android:src="@drawable/cloudy"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -63,8 +63,8 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="Paris"
+        android:layout_marginBottom="@dimen/marginBottom28"
+        android:text="@string/paris"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"

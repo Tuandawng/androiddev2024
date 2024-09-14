@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".WeatherAndForecastFragment">
 
@@ -13,7 +13,6 @@
         android:name="vn.edu.usth.usthweather.WeatherFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
         tools:layout="@layout/fragment_weather" />
 
     <androidx.fragment.app.FragmentContainerView
@@ -21,7 +20,7 @@
         android:name="vn.edu.usth.usthweather.ForecastFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="268dp"
         tools:layout="@layout/fragment_forecast" />
 
 </RelativeLayout>
