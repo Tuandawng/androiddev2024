@@ -27,7 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:contentDescription="tab layout"
-        android:paddingBottom="16dp"/>
+        android:paddingBottom="8dp"
+        />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/weather_viewpager"
