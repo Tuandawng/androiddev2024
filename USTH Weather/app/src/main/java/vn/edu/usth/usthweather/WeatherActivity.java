@@ -1,6 +1,7 @@
 package vn.edu.usth.usthweather;
 
 import android.annotation.SuppressLint;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -19,6 +20,7 @@ import vn.edu.usth.usthweather.adapter.WeatherAdapter;
 
 public class WeatherActivity extends AppCompatActivity {
     public static final String TAG = "Weather";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,8 @@ public class WeatherActivity extends AppCompatActivity {
             return insets;
         });
         Log.i(TAG, "ON_CREATE");
+        MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.sunflower);
+        mediaPlayer.start();
     }
 
 
