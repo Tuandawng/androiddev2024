@@ -147,7 +147,7 @@
             android:layout_width="@dimen/width100"
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/paddingStart16"
-            android:text="Thu"
+            android:text="@string/Thu"
             android:textColor="#000"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlSymmetry" />
@@ -305,7 +305,7 @@
             android:layout_width="@dimen/width100"
             android:layout_height="wrap_content"
             android:paddingStart="@dimen/paddingStart16"
-            android:text="Mon"
+            android:text="@string/mon"
             android:textColor="#000"
             android:textSize="18sp"
             tools:ignore="HardcodedText,RtlSymmetry" />

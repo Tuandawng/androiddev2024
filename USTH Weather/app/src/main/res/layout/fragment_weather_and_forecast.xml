@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".WeatherAndForecastFragment">
 
@@ -13,14 +13,16 @@
         android:name="vn.edu.usth.usthweather.WeatherFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout="@layout/fragment_weather" />
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/forecastContainer"
         android:name="vn.edu.usth.usthweather.ForecastFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="268dp"
-        tools:layout="@layout/fragment_forecast" />
+        android:layout_height="540dp"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
 
-</RelativeLayout>
+</LinearLayout>
