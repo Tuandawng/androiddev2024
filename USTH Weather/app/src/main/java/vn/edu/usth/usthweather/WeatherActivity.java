@@ -1,13 +1,16 @@
 package vn.edu.usth.usthweather;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -55,6 +58,26 @@ public class WeatherActivity extends AppCompatActivity {
         Log.i(TAG, "ON_CREATE");
         MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.sunflower);
         mediaPlayer.start();
+    }
+
+    private void initToolBar() {
+        Toolbar toolbar = findViewById(R.id.weather_toolbar);
+        toolbar.inflateMenu(R.menu.weather_menu);
+        toolbar.setTitle(R.string.app_name);
+        toolbar.setOnMenuItemClickListener(item -> {
+            int itemMenuId = item.getItemId();
+            if (itemMenuId == R.id.refresh) {
+                Toast.makeText(this, "Refreshing process...", Toast.LENGTH_SHORT).show();
+                return true;
+            } else if (itemMenuId == R.id.menu) {
+                Intent intent = new Intent(this, PrefActivity.class);
+                startActivity(intent);
+                return true;
+            } else {
+                Toast.makeText(this, "Not found menu item", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        });
     }
 
 

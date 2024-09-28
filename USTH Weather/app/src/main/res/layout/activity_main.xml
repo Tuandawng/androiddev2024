@@ -6,34 +6,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- WeatherFragment (green area) -->
-    <!--    <fragment-->
-    <!--        android:id="@+id/weather_fragment"-->
-    <!--        android:name="vn.edu.usth.usthweather.WeatherFragment"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        tools:layout="@layout/fragment_weather"/>-->
-
-    <!--    &lt;!&ndash; ForecastFragment below WeatherFragment &ndash;&gt;-->
-    <!--    <fragment-->
-    <!--        android:id="@+id/forecast_fragment"-->
-    <!--        android:name="vn.edu.usth.usthweather.ForecastFragment"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        tools:layout="@layout/fragment_forecast" />-->
-
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/weather_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        />
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:contentDescription="tab layout"
+        android:contentDescription="@string/tab_layout"
         android:paddingBottom="8dp"
         />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/weather_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

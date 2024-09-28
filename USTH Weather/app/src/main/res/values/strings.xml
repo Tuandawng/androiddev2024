@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="Thu">Thứ năm</string>
+    <string name="refresh">refresh</string>
+    <string name="menu">menu</string>
+    <string name="tab_layout">tab layout</string>
 </resources>
