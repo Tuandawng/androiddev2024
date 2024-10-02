@@ -34,6 +34,7 @@ public class WeatherActivity extends AppCompatActivity {
         WeatherAdapter weatherAdapter = new WeatherAdapter(this);
         viewPager2.setAdapter(weatherAdapter);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout1);
+        initToolBar();
         new TabLayoutMediator(tabLayout, viewPager2, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
@@ -54,6 +55,7 @@ public class WeatherActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
         });
         Log.i(TAG, "ON_CREATE");
         MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.sunflower);
