@@ -4,6 +4,8 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -23,7 +25,7 @@ import vn.edu.usth.usthweather.adapter.WeatherAdapter;
 
 public class WeatherActivity extends AppCompatActivity {
     public static final String TAG = "Weather";
-
+    private Handler handler = new Handler(Looper.getMainLooper());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +71,7 @@ public class WeatherActivity extends AppCompatActivity {
         toolbar.setOnMenuItemClickListener(item -> {
             int itemMenuId = item.getItemId();
             if (itemMenuId == R.id.refresh) {
-                Toast.makeText(this, "Refreshing process...", Toast.LENGTH_SHORT).show();
+                refreshContent();
                 return true;
             } else if (itemMenuId == R.id.menu) {
                 Intent intent = new Intent(this, PrefActivity.class);
@@ -80,6 +82,26 @@ public class WeatherActivity extends AppCompatActivity {
                 return false;
             }
         });
+    }
+
+    private void refreshContent(){
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(3000);
+                }catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(WeatherActivity.this,"Data refreshed!",Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        }).start();
     }
 
 
