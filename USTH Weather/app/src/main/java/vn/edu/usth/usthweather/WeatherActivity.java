@@ -3,9 +3,8 @@ package vn.edu.usth.usthweather;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -25,7 +24,6 @@ import vn.edu.usth.usthweather.adapter.WeatherAdapter;
 
 public class WeatherActivity extends AppCompatActivity {
     public static final String TAG = "Weather";
-    private Handler handler = new Handler(Looper.getMainLooper());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,7 +69,8 @@ public class WeatherActivity extends AppCompatActivity {
         toolbar.setOnMenuItemClickListener(item -> {
             int itemMenuId = item.getItemId();
             if (itemMenuId == R.id.refresh) {
-                refreshContent();
+                Toast.makeText(this, "Main thread", Toast.LENGTH_SHORT).show();
+                new RefreshContentTask().execute();
                 return true;
             } else if (itemMenuId == R.id.menu) {
                 Intent intent = new Intent(this, PrefActivity.class);
@@ -84,26 +83,22 @@ public class WeatherActivity extends AppCompatActivity {
         });
     }
 
-    private void refreshContent(){
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    Thread.sleep(3000);
-                }catch (InterruptedException e){
-                    e.printStackTrace();
-                }
-
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(WeatherActivity.this,"Data refreshed!",Toast.LENGTH_SHORT).show();
-                    }
-                });
+    private class RefreshContentTask extends AsyncTask<Void, Void, Void> {
+        @Override
+        protected Void doInBackground(Void... voids) {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-        }).start();
-    }
+            return null;
+        }
 
+        @Override
+        protected void onPostExecute(Void result) {
+            Toast.makeText(WeatherActivity.this, "Data refreshed!", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     @Override
     protected void onStart() {
@@ -111,19 +106,26 @@ public class WeatherActivity extends AppCompatActivity {
         Log.i(TAG, "ON_START");
     }
 
-    protected void onResume(){
+    @Override
+    protected void onResume() {
         super.onResume();
         Log.i(TAG, "ON_RESUME");
     }
-    protected void onPause(){
+
+    @Override
+    protected void onPause() {
         super.onPause();
         Log.i(TAG, "ON_PAUSE");
     }
-    protected void onStop(){
+
+    @Override
+    protected void onStop() {
         super.onStop();
         Log.i(TAG, "ON_STOP");
     }
-    protected void onDestroy(){
+
+    @Override
+    protected void onDestroy() {
         super.onDestroy();
         Log.i(TAG, "ON_DESTROY");
     }
